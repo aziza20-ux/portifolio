@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Aziza Solace Afdhali - software engineer portfolio with projects, skills, timeline, testimonials and AI recommendations." />
+	<meta name="keywords" content="portfolio, software engineer, projects, web developer, AI recommendation" />
+	<meta name="author" content="Aziza Solace Afdhali" />
+	<title>Aziza Solace Afdhali | Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Cabin:wght@500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<a class="skip-link" href="#main-content">Skip to main content</a>
+
+	<header class="top-header" id="top">
+		<div class="top-header__bar"></div>
+		<div class="top-header__controls container">
+			<button class="menu-button" id="menuButton" aria-label="Open navigation menu">
+				<span></span><span></span><span></span>
+			</button>
+
+			<nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+				<a href="#about">About</a>
+				<a href="#projects">Projects</a>
+				<a href="blog.html">Blog</a>
+				<a href="#contact">Contact</a>
+			</nav>
+
+			<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">Theme</button>
+		</div>
+	</header>
+
+	<main id="main-content" class="container page-content">
+		<section class="hero reveal" id="about" aria-labelledby="hero-title">
+			<p class="hero__intro">Hi, I'm Aziza Solace Afdhali</p>
+			<h1 id="hero-title">Software Engineer</h1>
+			<p class="hero__description">Building creative solutions to everyday digital challenges with thoughtful engineering and clean design.</p>
+			<a href="#projects" class="pill-btn">View My Work</a>
+		</section>
+
+		<section class="bio-card reveal" aria-labelledby="bio-title">
+			<h2 id="bio-title">Biography</h2>
+			<div class="bio-card__content">
+				<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=220&q=70" width="82" height="82" loading="lazy" alt="Portrait of Aziza" />
+				<div>
+					<p>Innovative software developer with demonstrated background in designing strategic software systems and clean UI architecture.</p>
+					<button class="pill-btn small">Download CV</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="skills-interests reveal" aria-labelledby="skills-title">
+			<div class="section-head">
+				<h2 id="skills-title">Skills and Interests</h2>
+				<a href="#ai-recommendation">Interests</a>
+			</div>
+			<div class="columns">
+				<div class="skills-list">
+					<article class="skill-row">
+						<p>Python</p>
+						<div class="bar"><span style="width: 84%"></span></div>
+					</article>
+					<article class="skill-row">
+						<p>JavaScript</p>
+						<div class="bar"><span style="width: 76%"></span></div>
+					</article>
+					<article class="skill-row">
+						<p>React</p>
+						<div class="bar"><span style="width: 70%"></span></div>
+					</article>
+				</div>
+				<div class="interest-chips" id="interestChips">
+					<button class="chip" data-interest="Reading">Reading</button>
+					<button class="chip" data-interest="Traveling">Traveling</button>
+					<button class="chip" data-interest="Open Source">Open Source</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="projects reveal" id="projects" aria-labelledby="projects-title">
+			<div class="section-head">
+				<h2 id="projects-title">Projects / Work Showcase</h2>
+				<a href="blog.html">Blog</a>
+			</div>
+
+			<div class="project-grid">
+				<article class="project-card" data-project="African Cuisine" data-stack="HTML, CSS, Embedded Media" data-detail="A culturally rich food discovery experience with featured dishes, regional stories, and video-guided cooking content.">
+					<img src="images/african-cuisine.svg" loading="lazy" width="420" height="210" alt="African Cuisine project preview" />
+					<h3>African Cuisine</h3>
+					<p>Food storytelling platform celebrating African dishes.</p>
+					<button class="pill-btn small details-trigger">More</button>
+				</article>
+
+				<article class="project-card" data-project="Daylight" data-stack="Flutter, Mobile UI, Wellness" data-detail="A mental wellness mobile experience with mood check-ins, guided breathing tips, and calming habit prompts.">
+					<img src="images/daylight.svg" loading="lazy" width="420" height="210" alt="Daylight project preview" />
+					<h3>Daylight</h3>
+					<p>Mood and wellness tracking app with mindful prompts.</p>
+					<button class="pill-btn small details-trigger">More</button>
+				</article>
+
+				<article class="project-card" data-project="BizPulse" data-stack="React, Dashboard UX, Business Insights" data-detail="A smart operations dashboard for stock, sales, and performance decisions with a bold conversational interface.">
+					<img src="images/bizpulse.svg" loading="lazy" width="420" height="210" alt="BizPulse project preview" />
+					<h3>BizPulse</h3>
+					<p>Business management dashboard for sales and stock.</p>
+					<button class="pill-btn small details-trigger">More</button>
+				</article>
+
+				<article class="project-card" data-project="AluGotTalent" data-stack="JavaScript, Community Platform, Media" data-detail="A talent showcase web app for discovering performers, filtering by category, and managing participant highlights.">
+					<img src="images/alugottalent.svg" loading="lazy" width="420" height="210" alt="AluGotTalent project preview" />
+					<h3>AluGotTalent</h3>
+					<p>Talent discovery platform with category-based browsing.</p>
+					<button class="pill-btn small details-trigger">More</button>
+				</article>
+			</div>
+		</section>
+
+		<section class="skills-interests reveal" aria-labelledby="expertise-title">
+			<h2 id="expertise-title">Skills / Expertise</h2>
+			<div class="skills-list compact">
+				<article class="skill-row"><p>Python</p><div class="bar"><span style="width: 80%"></span></div></article>
+				<article class="skill-row"><p>JavaScript</p><div class="bar"><span style="width: 78%"></span></div></article>
+				<article class="skill-row"><p>C++</p><div class="bar"><span style="width: 68%"></span></div></article>
+				<article class="skill-row"><p>React</p><div class="bar"><span style="width: 72%"></span></div></article>
+			</div>
+		</section>
+
+		<section class="timeline reveal" aria-labelledby="timeline-title">
+			<div class="section-head">
+				<h2 id="timeline-title">Experience / Timeline</h2>
+			</div>
+			<article>
+				<h3>Teaching Assistant - Gs Mayange</h3>
+				<p>2022 - 2023 | Assisted in programming labs and peer coaching.</p>
+			</article>
+			<article>
+				<h3>Women's Month Campaign Lead - ALU</h3>
+				<p>2022 | Built digital storytelling content and campaign reports.</p>
+			</article>
+			<article>
+				<h3>Software Engineering Student - ALU</h3>
+				<p>2021 - Present | Building web and AI-driven systems.</p>
+			</article>
+			<article>
+				<h3>Offline Learning App Project</h3>
+				<p>2023 | Solar-powered app experience for low-connectivity learners.</p>
+			</article>
+		</section>
+
+		<section class="testimonials reveal" aria-labelledby="testimonials-title">
+			<div class="section-head">
+				<h2 id="testimonials-title">Testimonials</h2>
+			</div>
+			<div class="testimonial-grid">
+				<article class="testimonial-card">
+					<img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=110&q=70" width="68" height="68" loading="lazy" alt="Jane Smith" />
+					<h3>Jane Smith</h3>
+					<p>"Aziza's insight made our internal tool easier to use and ship faster."</p>
+				</article>
+				<article class="testimonial-card">
+					<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=110&q=70" width="68" height="68" loading="lazy" alt="Wakuma Debere" />
+					<h3>Wakuma Debere</h3>
+					<p>"She brings strong ownership and sharp engineering instincts."</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="ai-box reveal" id="ai-recommendation" aria-labelledby="ai-title">
+			<h2 id="ai-title">AI Recommendation</h2>
+			<p>Get a personalized skill or project recommendation based on your interactions.</p>
+			<button class="pill-btn" id="aiSuggestBtn">Suggest for Me</button>
+			<p id="aiOutput" class="ai-output" aria-live="polite">No recommendation generated yet.</p>
+		</section>
+
+		<section class="contact reveal" id="contact" aria-labelledby="contact-title">
+			<h2 id="contact-title">Contact Me</h2>
+			<form class="contact-form" id="contactForm" novalidate>
+				<label>
+					<span>Name</span>
+					<input type="text" name="name" placeholder="Name" required />
+				</label>
+				<label>
+					<span>Email</span>
+					<input type="email" name="email" placeholder="Email" required />
+				</label>
+				<label>
+					<span>Phone</span>
+					<input type="tel" name="phone" placeholder="Phone" required />
+				</label>
+				<label>
+					<span>Message</span>
+					<textarea name="message" rows="4" placeholder="Message" required></textarea>
+				</label>
+				<button type="submit" class="pill-btn send">Send</button>
+				<p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="site-footer__bar"></div>
+		<div class="site-footer__links" aria-label="Social links">
+			<a href="#" aria-label="TikTok">T</a>
+			<a href="#" aria-label="X">X</a>
+			<a href="#" aria-label="GitHub">G</a>
+			<a href="#" aria-label="Instagram">I</a>
+		</div>
+	</footer>
+
+	<dialog id="projectModal" class="project-modal" aria-labelledby="modalTitle">
+		<button id="closeModal" class="close-modal" aria-label="Close details">Close</button>
+		<h3 id="modalTitle"></h3>
+		<p id="modalStack"></p>
+		<p id="modalDetail"></p>
+	</dialog>
+
+	<script src="script.js" defer></script>
+</body>
+</html>

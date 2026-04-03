@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blog highlights from Aziza Solace Afdhali about technology, education, and software engineering." />
+  <title>Aziza Solace Afdhali | Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Cabin:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="blog-page">
+  <header class="top-header">
+    <div class="top-header__bar"></div>
+    <div class="top-header__controls container">
+      <button class="menu-button" id="menuButton" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">Theme</button>
+    </div>
+  </header>
+
+  <main class="container page-content blog-main">
+    <h1>Blog</h1>
+
+    <section class="blog-list reveal" aria-label="Blog posts">
+      <article class="blog-card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=320&q=70" loading="lazy" width="320" height="175" alt="Offline learning app article" />
+        <div>
+          <h2>Building an Offline Learning App</h2>
+          <p>How we are designing a solar-powered classroom tool for low-connectivity regions.</p>
+          <small>Category: Tech</small>
+          <button class="pill-btn small" data-project="Offline Learning Platform" data-stack="PWA, IndexedDB, Solar UI" data-detail="This writeup explores architecture choices for resilient educational experiences.">More</button>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=320&q=70" loading="lazy" width="320" height="175" alt="Teaching assistant blog article" />
+        <div>
+          <h2>My Journey as a Teaching Assistant</h2>
+          <p>Supporting learners and improving academic confidence through practical labs.</p>
+          <small>Category: Education</small>
+          <button class="pill-btn small" data-project="Teaching Impact" data-stack="Mentorship, Curriculum, Labs" data-detail="A practical journey on guiding beginners from confusion to confidence.">More</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="code-block reveal" aria-label="Code snippet sample">
+      <code>const app = "Offline Learning Platform";</code>
+    </section>
+
+    <section class="comment-area reveal" aria-label="Comment section">
+      <label for="commentInput" class="visually-hidden">Add a comment</label>
+      <textarea id="commentInput" rows="2" placeholder="Add a comment..."></textarea>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__bar"></div>
+  </footer>
+
+  <dialog id="projectModal" class="project-modal" aria-labelledby="modalTitle">
+    <button id="closeModal" class="close-modal" aria-label="Close details">Close</button>
+    <h3 id="modalTitle"></h3>
+    <p id="modalStack"></p>
+    <p id="modalDetail"></p>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
