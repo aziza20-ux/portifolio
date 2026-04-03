@@ -434,10 +434,27 @@ p {
 }
 
 .site-footer__links a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 34px;
+	height: 34px;
+	border-radius: 999px;
+	background: rgba(0, 0, 0, 0.08);
 	color: var(--text-strong);
 	text-decoration: none;
-	font-weight: 700;
-	font-size: 0.75rem;
+	transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.site-footer__links a:hover {
+	background: rgba(0, 0, 0, 0.16);
+	transform: translateY(-1px);
+}
+
+.site-footer__links svg {
+	width: 17px;
+	height: 17px;
+	fill: currentColor;
 }
 
 .project-modal {
