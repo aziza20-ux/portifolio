@@ -9,7 +9,7 @@
 	<title>Aziza Solace Afdhali | Portfolio</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Cabin:wght@500;600;700&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,6 +17,7 @@
 
 	<header class="top-header" id="top">
 		<div class="top-header__bar"></div>
+		<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 		<div class="top-header__controls container">
 			<button class="menu-button" id="menuButton" aria-label="Open navigation menu">
 				<span></span><span></span><span></span>
@@ -85,30 +86,36 @@
 				<h2 id="projects-title">Projects / Work Showcase</h2>
 				<a href="blog.html">Blog</a>
 			</div>
+			<div class="project-filters" id="projectFilters" aria-label="Filter projects">
+				<button type="button" class="chip active" data-filter="all">All</button>
+				<button type="button" class="chip" data-filter="web">Web</button>
+				<button type="button" class="chip" data-filter="mobile">Mobile</button>
+				<button type="button" class="chip" data-filter="dashboard">Dashboard</button>
+			</div>
 
 			<div class="project-grid">
-				<article class="project-card" data-project="African Cuisine" data-stack="HTML, CSS, Embedded Media" data-detail="A culturally rich food discovery experience with featured dishes, regional stories, and video-guided cooking content.">
+				<article class="project-card" data-category="web" data-project="African Cuisine" data-stack="HTML, CSS, Embedded Media" data-detail="A culturally rich food discovery experience with featured dishes, regional stories, and video-guided cooking content.">
 					<img src="images/african-cuisine.svg" loading="lazy" width="420" height="210" alt="African Cuisine project preview" />
 					<h3>African Cuisine</h3>
 					<p>Food storytelling platform celebrating African dishes.</p>
 					<button class="pill-btn small details-trigger">More</button>
 				</article>
 
-				<article class="project-card" data-project="Daylight" data-stack="Flutter, Mobile UI, Wellness" data-detail="A mental wellness mobile experience with mood check-ins, guided breathing tips, and calming habit prompts.">
+				<article class="project-card" data-category="mobile" data-project="Daylight" data-stack="Flutter, Mobile UI, Wellness" data-detail="A mental wellness mobile experience with mood check-ins, guided breathing tips, and calming habit prompts.">
 					<img src="images/daylight.svg" loading="lazy" width="420" height="210" alt="Daylight project preview" />
 					<h3>Daylight</h3>
 					<p>Mood and wellness tracking app with mindful prompts.</p>
 					<button class="pill-btn small details-trigger">More</button>
 				</article>
 
-				<article class="project-card" data-project="BizPulse" data-stack="React, Dashboard UX, Business Insights" data-detail="A smart operations dashboard for stock, sales, and performance decisions with a bold conversational interface.">
+				<article class="project-card" data-category="dashboard" data-project="BizPulse" data-stack="React, Dashboard UX, Business Insights" data-detail="A smart operations dashboard for stock, sales, and performance decisions with a bold conversational interface.">
 					<img src="images/bizpulse.svg" loading="lazy" width="420" height="210" alt="BizPulse project preview" />
 					<h3>BizPulse</h3>
 					<p>Business management dashboard for sales and stock.</p>
 					<button class="pill-btn small details-trigger">More</button>
 				</article>
 
-				<article class="project-card" data-project="AluGotTalent" data-stack="JavaScript, Community Platform, Media" data-detail="A talent showcase web app for discovering performers, filtering by category, and managing participant highlights.">
+				<article class="project-card" data-category="web" data-project="AluGotTalent" data-stack="JavaScript, Community Platform, Media" data-detail="A talent showcase web app for discovering performers, filtering by category, and managing participant highlights.">
 					<img src="images/alugottalent.svg" loading="lazy" width="420" height="210" alt="AluGotTalent project preview" />
 					<h3>AluGotTalent</h3>
 					<p>Talent discovery platform with category-based browsing.</p>
